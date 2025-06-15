@@ -4,17 +4,21 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content=""width=device-width, initial-scale="1.0"/>
         <title>The Music Preview</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
         <link rel="stylesheet" href="style.css"/>
     </head>
 <body>
     <div class="container">
         <div class="titlebar">
-            The Music
+            The Music Preview
         </div>
         <div class="base">
-            <button id="prev"><=</button>
-            <img src="assets/img1.png" class="window" id="viewer"/>
-            <button id="next">=></button>
+            <button id="prev"><i class="fas fa-arrow-left"></i></button>
+            <div class="center">
+                <p id="description">Description</p>
+                <img src="assets/img1.png" class="window" id="viewer"/>
+            </div>
+            <button id="next"><i class="fas fa-arrow-right"></i></button>
         </div>
     </div>
     <script src="main.js"></script>
